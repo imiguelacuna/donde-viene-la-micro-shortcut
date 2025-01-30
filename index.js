@@ -67,4 +67,6 @@ listadoParaderos = sortStops(listadoParaderos);
 const menu = createMenu(listadoParaderos);
 const servicios = createServices(listadoParaderos);
 
-return { menu, servicios };
+const output = { menu, servicios };
+
+document.body.textContent = encodeURIComponent(JSON.stringify(output));
