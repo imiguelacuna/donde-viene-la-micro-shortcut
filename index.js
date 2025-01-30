@@ -41,8 +41,6 @@ const createServices = (stops) => stops.reduce((acc, curr) => {
     return acc;
 }, {});
 
-let [lat, long] = args.plainTexts;
-
 const response = await fetchData(paraderos);
 
 let listadoParaderos = response
